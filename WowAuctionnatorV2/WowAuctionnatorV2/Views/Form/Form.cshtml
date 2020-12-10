@@ -1,0 +1,60 @@
+﻿<h1>Add a new order</h1>
+<form id="form" action="/item/Insert" method="post">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control itemNameJs" placeholder="Item name" name="ItemName" autocomplete="off">
+                <input type="hidden" name="ItemId">
+                <div class="input-group-append">
+                    <span class="input-group-text itemIconJs">?</span>
+                </div>
+            </div>
+            <div id="blizzardAutocomplete"></div>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control quantityJs" placeholder="Quantity" name="Quantity" autocomplete="off">
+        </div>
+        <div class="col">
+            <input id="datepicker" type="datetime" class="form-control" name="SellDate" placeholder="Date">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control unitPriceWithTaxJs" placeholder="Unit price with tax" name="UnitPriceWithTax" autocomplete="off">
+                <div class="input-group-append">
+                    <span class="input-group-text">Po</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control totalPriceWithTaxJs" placeholder="Total price with tax" name="TotalPriceWithTax" autocomplete="off">
+                <div class="input-group-append">
+                    <span class="input-group-text">Po</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control totalPriceWithoutTaxJs" placeholder="Total price without tax" name="TotalPriceWithoutTax" autocomplete="off">
+                <div class="input-group-append">
+                    <span class="input-group-text">Po</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control taxJs" placeholder="Tax" value="5">
+                <div class="input-group-append">
+                    <span class="input-group-text">%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Ajouter et raffraichir le fomulaire</button>
+        </div>
+    </div>
+</form>

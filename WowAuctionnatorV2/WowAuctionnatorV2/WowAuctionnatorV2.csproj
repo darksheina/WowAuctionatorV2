@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Form\" />
+    <Folder Include="Dao\" />
+    <Folder Include="Dao\BlizzardApi\" />
+    <Folder Include="Models\Mapper\" />
+    <Folder Include="Models\Item\" />
+    <Folder Include="Views\Item\" />
+    <Folder Include="Dao\DatabaseConnection\" />
+    <Folder Include="Dao\DatabaseConnection\Dto\" />
+    <Folder Include="Dao\DatabaseConnection\Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Npgsql" Version="5.0.0" />
+  </ItemGroup>
+</Project>

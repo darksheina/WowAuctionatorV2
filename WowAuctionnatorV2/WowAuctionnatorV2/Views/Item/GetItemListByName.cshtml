@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+
+@using WowAuctionnatorV2.Models.Item
+@model ItemListByNameViewModel
+
+@if (Model != null && Model.ItemList != null)
+{
+    <ul class="list-group itemList">
+        @foreach (ItemBaseViewModel item in Model.ItemList)
+        {
+            <li class="list-group-item" data-id="@item.Id" data-wowId="@item.WowId">@item.Name</li>
+        }
+    </ul>
+}
