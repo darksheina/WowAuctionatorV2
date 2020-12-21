@@ -152,6 +152,6 @@ $(".itemNameJs", $form).on("keyup", function () {
     });
 })
 
-$form.on("submit", function () {
-
+$(".dropdown-item", $form).on("clic", function () {
+    $(".dropdown-toggle", $form).html(this.innerText);
 })

@@ -7,6 +7,18 @@
 
 @if (Model != null && Model.ItemList != null)
 {
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter par
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">None</a>
+            @foreach (ItemTypeViewModel type in Model.ItemTypeList)
+            {
+                <a class="dropdown-item" href="#">@type.Name</a>
+            }
+        </div>
+    </div>
     <ul class="list-group itemList">
         @foreach (ItemBaseViewModel item in Model.ItemList)
         {
